@@ -175,8 +175,7 @@ def gameLoop():
             if event.type == pygame.KEYDOWN:
                 handleKeyPresses(snake, event)
         for i in range(snake.size):
-            if ((food.xPos) < (snake.xPos+i) < (food.xPos+food.size)) and
-            ((food.yPos) < (snake.yPos+i) < (food.yPos+food.size)):
+            if ((food.xPos) < (snake.xPos+i) < (food.xPos+food.size)) and ((food.yPos) < (snake.yPos+i) < (food.yPos+food.size)):
                 for j in range(4):
                     snake.addBody()
                 score += 1
